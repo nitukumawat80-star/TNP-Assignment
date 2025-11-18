@@ -1,0 +1,585 @@
+#Name : Nitesh kumawat
+# Enrollment 0157Al231134
+#Batch :5
+#Time : 10:30 to 12:10
+#Basic if else problem
+#1 check number is positive negative
+num = int(input("Enter a number"))
+if num > 0 :
+    print(num ,"is positive")
+elif num < 0 :
+    print(num ,"is negative")
+else:
+    print(num ,"is zero")
+
+
+
+#2 check nuber is even or odd
+num = int(input("Enter a number"))
+if num % 2 ==0:
+    print(num ," is even")
+else:
+    print(num, "num is odd")
+
+#3check leap year
+year = int(input("Enter a year"))
+if (year % 4== 0 and year % 100 != 0) or (year % 400 == 0):
+    print("This year leap year")
+else:
+    print("This year not leap year")
+
+#4 check greatest of two number
+a,b= 3,2
+if a > b :
+    print("a greatest number")
+
+else:
+    print("bis greatest")
+
+#5 age for vote
+age = int(input("Enter a age"))
+if age >= 18:
+    print("you are eligible for vote")
+else:
+    print("you are not eligible for vote")
+
+#6 check vowel and consonant
+value = str(input("Enter a word : "))
+val = value.upper()
+lists = ["A","E","I","O","U"]
+if val in lists:
+    print("word is vowel")
+else:
+    print("Word is consonant")
+
+
+
+#7 check number are divisible by 5
+num = int(input("Enter a number"))
+if num % 5 == 0:
+    print("num is divisible by 5")
+else:
+    print("not divisible by 5")
+
+
+#8 check student pass in exam
+num = int(input("Enter a marks"))
+if num >= 40 and num <= 100:
+    print("you are pass in exam")
+else:
+    print("you are not pass in exam")
+
+#10 check number are divisible by 3 and 7
+num = int(input("Enter a number"))
+if num % 3 == 0 and num % 7 == 0:
+    print("Number are divisible by 3 and 7")
+else:
+    print("Number are not divisible by 3 and 7")
+
+
+#Ladder if and nested if
+
+
+#1 check greatest number
+a,b,c= 3,2,5
+if a > b and a > c:
+    print(f"{a} greatest number")
+elif c > a and a >b:
+    print(f"{c} is greatest")
+
+else:
+    print(f"{b} is greatest")
+
+#2 classify a person based on age
+age = int(input("Enter a age"))
+if age < 13:
+    print("you are child")
+elif age >= 13 and age <= 19:
+    print("you are teenager")
+elif age >= 20 and age <= 59:
+    print("you are Adult")
+elif age >= 60:
+    print("you are senior")
+else:
+    print("Enter valid age")
+
+#3 print grades based on marks
+marks = int(input("Enter your marks "))
+if marks >= 90 and marks <= 100:
+    print("You are pass with Grade 'A'")
+elif  marks >= 75 and marks <= 89:
+     print("You are pass with Grade 'B'")
+elif marks >= 50 and marks <= 74:
+     print("You are pass with Grade 'C'")
+elif marks >= 35 and marks <= 49:
+     print("You are pass with Grade 'D'")
+elif marks < 35:
+    (print("You are Fail in exam"))
+else:
+    print("Enter valid marks")
+
+
+#4 check which type of triangle
+l1= int(input("Enter 1st Side of Triangle "))
+l2 = int(input("Enter 2nd Side of Triangle  "))
+l3 = int(input("Enter 3rd Side of Triangle "))
+if (l1 == l2 and l1 == l3) and l2 == l3:
+    print("Triangle is Equilateral")
+elif l1 == l2 or l1 == l3 or l2 == l3:
+    print("Triangle is Isosceles") 
+else:
+    print("Triangle is Special")
+
+
+
+#5 calculate electricity bill
+unit = int(input("Enter electricity unit"))
+if unit <= 100 :
+    ta = unit*5
+    print(f"Elrctricity bill is {ta}") 
+elif unit > 100 and unit <= 200:
+    ta = unit - 100
+    total = ta * 7 + 500
+    print(f"Elrctricity bill is {total}") 
+elif unit > 200:
+    ta = unit - 200
+    total = ta * 10 + 1200
+    print(f"Elrctricity bill is {total}") 
+else:
+    print("Unit not valid") 
+
+#6 check largest number
+a,b,c,d = 4,5,1,7
+if (a>b and a>c) and a>d:
+    print(f"{a} is largest")
+elif (b>a and b>c) and b>d:
+    print(f"{b} is largest")
+elif (c>a and c>b) and c>d:
+    print(f"{c} is largest")
+elif (b>a and b>c) and b>d:
+    print(f"{b} is largest")
+elif (d>a and d>c) and d>b:
+    print(f"{d} is largest")
+else:
+    print("Enter valid number")
+
+#7 check character is upper lower 
+char = (input("Enter a charcter"))
+if char.isupper():
+    print("Character is upper case")
+elif char.lower():
+    print("Character is lower case")
+else:
+    print("Special charater")
+
+#8 check given year is century and leap
+year = int(input("Enter a year"))
+if (year % 100 == 0) and ((year % 4== 0 and year % 100 != 0) or (year % 400 == 0)): 
+    
+      print("This year leap year and Century")
+else:
+    print("This year not century year")
+
+
+#9 Classify BMI value
+bmi = int(input("Enter your BMI value"))
+if bmi < 18.5:
+    print("you are under weight")
+elif bmi >= 18.5 and bmi <= 24.9:
+    print("you are normal weight")
+elif bmi >= 25.0 and bmi <= 29.9:
+    print("you are over weight")
+elif bmi >= 30.0 and bmi <= 39.9:
+    print("you are Obese weight")
+elif bmi >= 40:
+    print("you are Morbidly weight")
+
+#10 Display smallest number
+a,b,c = 4,8,6
+if a<b and a<c:
+    print(a)
+elif b<a and a<c:
+    print(b)
+elif c<a and c<a:
+    print(c)
+else:
+    print("error")
+
+
+
+
+#for loop
+#1 Armstrong number
+lists = []
+for i in  range(100,999):
+        total = 0
+        tem = i
+        while tem>0:
+                digit = tem % 10
+                total =total + digit **3
+                tem = tem // 10
+        if i == total:
+                lists.append(i)
+print(lists)
+
+#2  n prime number
+num = int(input("Enter a nuber"))
+result = []
+
+for i in range(2,num+1):
+    is_prime= True
+    for j in range(2,int(i**0.5)+1):
+            if i % j == 0:
+                is_prime = False
+    if is_prime:
+         result.append(i) 
+print("Prime number up to",num,"are",result) 
+
+#3 Display all number from 1 to 500 divisible by 3 but sum should not exceed 10
+lists = []
+for i in range(1,500):
+      if i % 3 == 0:
+            sum = 0
+            num = i
+            while num > 0:
+                  digit = num % 10
+                  sum =+ digit
+                  num //= 10
+            if sum < 11:
+                  lists.append(i)
+print(lists)
+
+
+#4 print a pyramid of star
+num = int(input("Enter a row number"))
+for i in range((num)):
+      print(" " * (num-i-1),end=" ")
+      print("*"*(2*i+1))
+
+
+#5. Write a program to accept a string and check whether it is a pangram (contains all 26 alphabets at least once) using a for loop.
+import string
+alphabet = set(string.ascii_lowercase)
+
+s = input("Enter your string: ")
+s_low = s.lower()
+
+for char in s_low:
+    if char in alphabet:
+        alphabet.remove(char)
+    if not alphabet:
+        break
+
+if not alphabet:
+    print("Pangram")
+else:
+    print("Not Pangram")
+
+
+
+#6. Write a program using a for loop to print all twin primes between 1 and 100. (Twin primes: pairs of prime numbers with a difference of 2, e.g., (3,5), (11,13)).
+
+num = 2
+prime =[]
+for num in range(2,100):
+    flag = True
+    for i in range(2, int(num**0.5)+1):
+        if num % i == 0:
+            flag = False
+    
+    if flag:
+        prime.append(num)
+result = []
+for i in range(len(prime)-1):
+    if prime[i+1] - prime[i] == 2:
+        result.append([prime[i], prime[i+1]])
+
+print(result)
+
+
+
+#7. Write a program that accepts a number from the user and prints whether it is a Harshad number (number divisible by the sum of its digits) using a for loop.
+
+num = int(input("Enter a number: "))
+temp_num = num
+sum = 0
+while temp_num > 0:
+    ld = temp_num % 10
+    sum += ld
+    temp_num //= 10
+
+if num % sum == 0:
+    print("Harshad Number")
+else: 
+    print("Not Harshad Number")
+
+
+
+#8. Write a program to generate Pascal’s Triangle up to n rows using a for loop.
+n = int(input("Enter number of rows: "))
+
+for i in range(n):
+    # printing spaces
+    for j in range(n - i - 1):
+        print(" ", end="")
+    
+    val = 1
+    for k in range(i + 1):
+        print(val, end=" ")
+        val = val * (i - k) // (k + 1)   # formula for next value
+    print()
+
+
+
+#9 Sum of series 1² + 2² + ... + n²
+
+n = int(input("Enter a number: "))
+total = 0
+
+for i in range(1, n + 1):
+    total += i * i
+
+print("Sum of series =", total)
+
+
+
+
+#10 Strong Number (sum of factorials of digits)
+
+num = int(input("Enter a number: "))
+n = num
+sum_fact = 0
+
+while n > 0:
+    digit = n % 10
+    fact = 1
+    for i in range(1, digit + 1):
+        fact *= i
+    sum_fact += fact
+    n = n // 10
+
+if sum_fact == num:
+    print(num, "is a Strong number")
+else:
+    print(num, "is Not a Strong number")
+
+
+#while loop problem
+#1 Reverse a number and check if prime
+
+num = int(input("Enter a number: "))
+rev = 0
+n = num
+while n > 0:
+    digit = n % 10
+    rev = rev * 10 + digit
+    n = n // 10
+
+print("Reverse =", rev)
+
+if rev > 1:
+    i = 2
+    prime = True
+    while i < rev:
+        if rev % i == 0:
+            prime = False
+            break
+        i += 1
+    if prime:
+        print("Prime")
+    else:
+        print("Not Prime")
+else:
+    print("Not Prime")
+
+
+
+
+#2 Keep entering numbers until sum of digits > 100
+
+total = 0
+while total <= 100:
+    num = int(input("Enter a number: "))
+    n = num
+    while n > 0:
+        total += n % 10
+        n = n // 10
+    print("Current sum of digits =", total)
+print("Sum exceeded 100!")
+
+
+
+
+#3 Check Duck number (contains zero but not starting with zero)
+
+num = input("Enter a number: ")
+
+if num[0] == "0":
+    print("Not Duck number")
+else:
+    i = 0
+    found = False
+    while i < len(num):
+        if num[i] == "0":
+            found = True
+            break
+        i += 1
+    if found:
+        print("Duck number")
+    else:
+        print("Not Duck number")
+
+
+
+
+#4 Check Happy number
+
+num = int(input("Enter a number: "))
+n = num
+
+while n != 1 and n != 4:   # loop until reaches 1 or 4
+    sum_sq = 0
+    while n > 0:
+        digit = n % 10
+        sum_sq += digit * digit
+        n = n // 10
+    n = sum_sq
+
+if n == 1:
+    print(num, "is a Happy number")
+else:
+    print(num, "is Not a Happy number")
+
+
+
+
+#5 Largest Prime Factor
+
+num = int(input("Enter a number: "))
+n = num
+i = 2
+largest = 1
+
+while i <= n:
+    if n % i == 0:
+        largest = i
+        n = n // i
+    else:
+        i += 1
+
+print("Largest prime factor =", largest)
+
+
+
+#6 Accept strings until palindrome entered
+
+while True:
+    s = input("Enter a string: ")
+    i = 0
+    j = len(s) - 1
+    pal = True
+    while i < j:
+        if s[i] != s[j]:
+            pal = False
+            break
+        i += 1
+        j -= 1
+    if pal:
+        print("Palindrome entered! Exiting...")
+        break
+    else:
+        print("Not palindrome, try again.")
+
+
+
+
+#7 Digital root
+
+num = int(input("Enter a number: "))
+n = num
+
+while n >= 10:
+    sum_d = 0
+    while n > 0:
+        sum_d += n % 10
+        n = n // 10
+    n = sum_d
+
+print("Digital root =", n)
+
+
+
+
+#8 Collatz sequence
+
+n = int(input("Enter a number: "))
+
+while n != 1:
+    print(n, end=" ")
+    if n % 2 == 0:
+        n = n // 2
+    else:
+        n = 3 * n + 1
+print(1)
+
+
+
+
+#9 Kaprekar number
+
+num = int(input("Enter a number: "))
+sq = num * num
+s = str(sq)
+d = len(str(num))
+left = s[:-d]
+right = s[-d:]
+
+if left == "":
+    left = "0"
+
+if int(left) + int(right) == num:
+    print(num, "is a Kaprekar number")
+else:
+    print(num, "is Not a Kaprekar number")
+
+
+
+
+#10 ATM Simulation
+
+balance = 0
+
+while True:
+    print("\nATM Menu:")
+    print("1. Check balance")
+    print("2. Deposit money")
+    print("3. Withdraw money")
+    print("4. Exit")
+    choice = int(input("Enter choice: "))
+
+    if choice == 1:
+        print("Balance =", balance)
+    elif choice == 2:
+        amt = int(input("Enter amount to deposit: "))
+        balance += amt
+        print("Deposited successfully")
+    elif choice == 3:
+        amt = int(input("Enter amount to withdraw: "))
+        if amt <= balance:
+            balance -= amt
+            print("Withdrawn successfully")
+        else:
+            print("Insufficient balance")
+    elif choice == 4:
+        print("Thank you! Exiting...")
+        break
+    else:
+        print("Invalid choice")
+
+
+    
+                  
+
+
+
+
